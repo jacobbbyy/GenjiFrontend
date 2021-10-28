@@ -5,8 +5,7 @@ import Footer from '../Footer';
 function Services() {
   return (
     <>
-    
-    <img src='/image/bg2-01.jpg'alt="logo" width="1903" height="1600" /> 
+    <h1 className='services'>SERVICES</h1>;
     <Footer />
     </>
   );
