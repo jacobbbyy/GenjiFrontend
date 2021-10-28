@@ -27,7 +27,8 @@ export const Button = ({
         type={type}
       >
         {children}
-      </button>
+      </button> 
     </Link>
-  );
+    );
+  
 };

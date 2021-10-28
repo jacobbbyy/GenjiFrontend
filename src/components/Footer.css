@@ -1,10 +1,16 @@
 .footer-container {
-    background-color: #242424;
-    padding: 4rem 0 2rem 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  background-color: rgba(0,0,0,0.6);
+  opacity:1;
+  filter:Alpha(opacity=60); /* IE8 and earlier */
+margin-top: 2em;
+float: left;
+width: 800px;
+height: 175px;
+clear:both;
+margin-left: auto;
+margin-right: auto;
+line-height: 1.0em;
+
   }
   
   .footer-subscription {

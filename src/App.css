@@ -1,10 +1,9 @@
 * {
-  
   box-sizing: border-box;
+  border: 0;
   margin: 0;
   padding: 0;
   font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
-
 }
 
 .home,
@@ -19,12 +18,14 @@
 }
 
 .services {
-  background-image: url('/src/images/img-2.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh; 
+  position: absolute;
+  object-fit: cover;
+  
+
 }
 
 .products {

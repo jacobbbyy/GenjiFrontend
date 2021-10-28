@@ -29,38 +29,43 @@ function Navbar() {
       <nav className='navbar'>
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            <img src='/image/logo111.png'alt="logo" width="90" height="50" /> 
-            GENJI
+            <img src='/image/Logo_black-01.png'alt="logo" width="120" height="60" /> 
           </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-            
-            <li>
+            <li className='nav-item'>
               <Link
                 to='/services'
-                className='nav-links-mobile'
+                className='nav-links'
                 onClick={closeMobileMenu}
               >
                 SocialWork
               </Link>
             </li>
-
-            <li>
+            <li className='nav-item'>
               <Link
                 to='/socialmedia'
-                className='nav-links-mobile'
+                className='nav-links'
                 onClick={closeMobileMenu}
               >
-                 <i class='fab fa-twitter-square' />
+                <i class='fab fa-discord' />
               </Link>
             </li>
-
-            <li>
+            <li className='nav-item'>
+              <Link
+                to='/socialmedia'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                <i class='fab fa-twitter-square' />
+              </Link>
+            </li>
+            <li className='nav-item'>
               <Link
                 to='/products'
-                className='nav-links-mobile'
+                className='nav-links'
                 onClick={closeMobileMenu}
               >
                 Roadmap
@@ -77,10 +82,6 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>  SocialWork </Button>}
-          {button && <Button buttonStyle='btn--outline'>  <i class='fab fa-discord' /> </Button>}
-          {button && <Button buttonStyle='btn--outline'>  <i class='fab fa-twitter-square' /> </Button>}
-          {button && <Button buttonStyle='btn--outline'>Roadmap</Button>}
           {button && <Button buttonStyle='btn--outline'>ConnectWallet</Button>}
         </div>
       </nav>
