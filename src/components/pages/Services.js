@@ -5,10 +5,12 @@ import Footer from '../Footer';
 function Services() {
   return (
     <>
-    <h1 className='services'>SERVICES</h1>;
-    <Footer />
+    <div className='services'> </div>
+    
+    
     </>
   );
+ 
 }
 
 export default Services;
